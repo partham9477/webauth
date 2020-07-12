@@ -70,7 +70,7 @@ const validateCreds = async function(){
     const AUTH_CHALLENGE = 'someRandomString';
     const publicKey = {
         // your domain
-        rpId: "92587ba8.ngrok.io",
+        // rpId: "92587ba8.ngrok.io",
         // random, cryptographically secure, at least 16 bytes
         challenge: enc.encode(AUTH_CHALLENGE),
         allowCredentials: [{
@@ -110,9 +110,9 @@ const validateCreds = async function(){
     // 2. Check that "retrievedOrigin" matches your domain - otherwise this might be a phish - not shown here
     console.log(retrievedChallenge);
     if (retrievedChallenge == AUTH_CHALLENGE){
-        alert("Authorized");
+        alert("Login Successful");
     } else {
-        alert("Unauthorized");
+        alert("Unauthorized Login");
     }
 }
 
