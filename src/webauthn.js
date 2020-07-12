@@ -31,9 +31,9 @@ const createCreds = async function() {
             name: 'Your awesome company' // sample relying party
         },
         user: {
-            id: enc.encode('dvas0004'),
-            name: 'David Vassallo',
-            displayName: 'dvas0004'
+            id: enc.encode('muk0004'),
+            name: 'Partha Mukherjee',
+            displayName: 'muk0004'
         },
         authenticatorSelection: { 
             userVerification: "preferred" 
